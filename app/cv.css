@@ -1,0 +1,192 @@
+﻿
+    /* CV Page Specific Styles */
+    .cv-hero {
+      padding: 8rem 2rem 3rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .cv-hero h1 {
+      font-size: 3.2rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.8rem;
+    }
+
+    .cv-hero h1 span {
+      background: linear-gradient(135deg, var(--purple-light), var(--purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .cv-hero p {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      max-width: 580px;
+      margin: 0 auto 2rem;
+      line-height: 1.6;
+    }
+
+    .cv-actions-bar {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 3.5rem;
+      flex-wrap: wrap;
+    }
+
+    /* Resume Document Layout */
+    .cv-document {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 3.5rem 3rem;
+      max-width: 900px;
+      margin: 0 auto 6rem;
+      box-shadow: var(--shadow-lg), 0 0 35px var(--purple-glow-soft);
+      position: relative;
+    }
+
+    .cv-doc-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 2rem;
+      margin-bottom: 2.5rem;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .cv-name {
+      font-size: 2.2rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 0.2rem;
+    }
+
+    .cv-role {
+      font-size: 1.1rem;
+      color: var(--purple-light);
+      font-weight: 600;
+    }
+
+    .cv-contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .cv-section {
+      margin-bottom: 2.5rem;
+    }
+
+    .cv-section-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 1.4rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+    }
+
+    .cv-item {
+      margin-bottom: 1.8rem;
+    }
+
+    .cv-item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.3rem;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .cv-item-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .cv-item-company {
+      font-size: 0.92rem;
+      color: var(--purple-light);
+      font-weight: 600;
+    }
+
+    .cv-item-date {
+      font-size: 0.82rem;
+      color: var(--text-dim);
+    }
+
+    .cv-item-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .cv-item-desc ul {
+      margin-left: 1.2rem;
+      margin-top: 0.4rem;
+    }
+
+    .cv-item-desc li {
+      margin-bottom: 0.3rem;
+    }
+
+    @media (max-width: 768px) {
+      .cv-hero {
+        padding: 6.5rem 1.25rem 2rem;
+      }
+      .cv-hero h1 {
+        font-size: 2.5rem;
+      }
+      .cv-document {
+        padding: 2rem 1.25rem;
+        margin: 0 1rem 4rem;
+      }
+      .cv-doc-header {
+        flex-direction: column;
+      }
+      .cv-actions-bar {
+        flex-direction: column;
+        padding: 0 1.25rem;
+      }
+      .cv-actions-bar a, .cv-actions-bar button {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
+    @media print {
+      body {
+        background: white !important;
+        color: black !important;
+      }
+      .navbar, footer, .cv-actions-bar, .cv-hero {
+        display: none !important;
+      }
+      .cv-document {
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        background: transparent !important;
+      }
+      .cv-item-desc, .cv-contact-details {
+        color: #333 !important;
+      }
+      .cv-role, .cv-item-company {
+        color: #6d28d9 !important;
+      }
+    }
+  
